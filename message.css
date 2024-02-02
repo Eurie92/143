@@ -1,0 +1,10 @@
+.love-letter {
+    display: none;
+}
+
+.msg {
+    position: absolute;
+    top: 215px;
+    left: 350px;
+    display: none ;
+}

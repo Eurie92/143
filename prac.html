@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="prac.css">
+  <link rel="stylesheet" href="message.css">
+  <link rel="stylesheet" href="all-button.css">
+</head>
+<body>
+<div>
+  <button class="click" onclick="myFunction()" id="gone">Click Me</button>
+
+    <button id="see" class="touch" onclick="reMove()">Touch Me</button>
+</div>
+
+  <div id="msg" class="msg">
+    <h1>HI MY LOVE ANONG <br>SABI  MONG  <br>NAKALIMUTAN <br> KOTONG ARAW NATO</h1>
+  </div>
+  
+
+  <div id="show" class="circle">
+  </div>
+  <div id="heart" class="heart"></div>
+
+
+  <div class="love-letter">
+<h1>    HAPPY 18TH MONTHSARY MY LOVE</h1>
+  </div>
+
+  <script>
+    function myFunction() {
+      const shows = document.getElementById('show');
+      const gones = document.getElementById('gone');
+      const hearts = document.getElementById('heart');
+      const change =  document.body;
+      const appear = document.getElementById('see');
+      const msgs = document.getElementById('msg');
+    
+
+
+      hearts.style.display = 'block';
+      gones.style.display = 'none';
+      shows.style.display = 'block';
+  
+
+
+
+      setTimeout(function(){
+        change.style.backgroundColor = "rgb(228, 131, 151)";
+        }, 2000);
+
+      setTimeout(function(){
+        appear.style.display = 'block';
+        }, 1900);
+
+        setTimeout(function() {
+          msgs.style.display = 'block';
+        }, 1800);
+
+
+    }
+
+    
+  </script>
+  <script src="remove.js"></script>
+</body>
+</html>
