@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 18th monthsary</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            display: none;
+            font-size: 100px;
+        }
+
+        .gone {
+            position: absolute;
+            top: -1000px;
+        }
+
+        .a {
+            width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: solid 2px;
+      animation: typing 2s steps(30), cursor 1.2s step-end forwards;
+      display: none;
+      position: absolute;
+      left: 80px;
+      font-size: 50px;
+    }
+    
+    @keyframes cursor {
+        from, to { border-color: transparent; }
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <button id="gone" class="gone
+    " onclick="playBackgroundSound()">Play Sound</button>
+    <audio id="backgroundSound" autoplay>
+    <source src="Conan Gray - Heather (Lyric Video).mp3" type="audio/mp3">
+    
+</audio>
+
+    <div class="container">
+        <h1 id="h" class="h">H</h1>
+        <h1 id="i" class="i">I</h1>
+        <h1 id="l" class="l">LOVE</h1>
+
+        <h1 id="a" class="a"> AKALAIN MO ANG TAGAL NA PALA NATIN NUNG <br> 
+            KELAN LANG NILILIGAWAN PALANG KITA PERO NGAYON PANG 18TH <br> MONTHSARY NANATIN 
+            THANK YOU SA LAHAT BABY SA PAG STAY SA PAG <br>  INTINDI SAKIN ARAW ARAW MAHAL NA MAHAL KITA SOBRA 
+            </h1>
+    </div>
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            myFunction();
+        });
+        
+        function myFunction() {
+            const h = document.getElementById('h');
+            const i = document.getElementById('i');
+            const l = document.getElementById('l');
+            const a = document.getElementById('a');
+
+            setTimeout(function() {
+                h.style.display = 'block';
+              }, 1800);
+
+
+
+              setTimeout(function() {
+                  i.style.display = 'block';
+                }, 2000);
+
+                
+            setTimeout(function() {
+                h.style.display = 'none';
+              }, 3000);
+
+
+              setTimeout(function() {
+                  i.style.display = 'none';
+                }, 3000);
+    
+
+                setTimeout(function() {
+                    l.style.display = 'block';
+                  }, 3000);
+    
+                  setTimeout(function() {
+                    l.style.display = 'none';
+                  }, 5000);
+
+                  
+
+                setTimeout(function() {
+                    a.style.display = 'block';
+                  }, 5000);
+    
+                  setTimeout(function() {
+                    a.style.display = 'none';
+                  }, 20000);
+        }
+
+        function playBackgroundSound() {
+            const backgroundSound = document.getElementById('backgroundSound');
+            backgroundSound.play();
+
+        }
+
+    
+    </script>
+</body>
+</html>
